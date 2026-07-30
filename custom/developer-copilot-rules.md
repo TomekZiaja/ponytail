@@ -1,12 +1,5 @@
 # Developer Copilot Rules
 
-## Communication
-
-- Keep explanations concise.
-- Do not repeat the task description.
-- Avoid unnecessary summaries.
-- Prefer bullets over long explanations.
-
 ## PHP
 
 - Prefer strict typing.
@@ -27,3 +20,11 @@
 - Match existing naming and coding style.
 - Prefer consistency with the current codebase over personal preferences.
 - Do not change unrelated code.
+
+## Refactoring
+
+- Prefer small, incremental refactoring.
+- Do not extract methods only to reduce method length.
+- Extract code when it improves reuse, testability, or domain clarity.
+- Avoid abstractions without a clear benefit.
+- Preserve existing working patterns unless there is a concrete reason to change them.
