@@ -1,6 +1,6 @@
 # Drupal 11+ / PHP 8.2+ (Ponytail overlay)
 
-Lazy Senior Rule: Bei Debugging immer die offensichtlichste Fehlerquelle zuerst checken (falsche Permission, falsche ID, falsche User) bevor du in den Code-Dschungel gehst. Occam's Razor: die einfachste Erklärung ist fast immer richtig.
+Lazy Senior Rule: When debugging, check the obvious sources first (wrong permission, wrong ID, wrong user) before diving into the code jungle. Occam's Razor: the simplest explanation is almost always right.
 
 - Preserve existing patterns/naming/architecture unless there's a concrete reason to change.
 - Don't refactor unrelated code or mix cleanup with the actual change.
