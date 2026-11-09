@@ -69,3 +69,16 @@ Examples:
 rtk ddev exec vendor/bin/phpunit --configuration /var/www/html/tests/phpunit.xml web/modules/custom/<module>/tests/
 rtk ddev drush status
 rtk ddev composer show
+```
+
+## Docs
+External docs (Markdown repo): `~/projects/drupal-sites-docs` – for questions about the `sites_*` module family (architecture, sites/groups/multisite-logic), read these first.
+
+Covers: `sites`, `sites_content_overrides`, `sites_devel`, `sites_diff`, `sites_eca`, `sites_group`, `sites_linkit`, `sites_redirect`, `sites_shield`, `sites_simple_sitemap` (all under `web/modules/contrib/`).
+
+- Never edit these modules directly (contrib) — patches go in `patches/` per project convention.
+- If the docs repo isn't present/accessible, fall back to each module's own `README.md`/`*.api.php`.
+
+External docs (Markdown repo): `~/projects/linexo-docu` – for questions about Linexo system/infrastructure documentation, processes, and repositories (project/business context beyond this codebase), read these first.
+
+Both doc repos are kept up to date via `just docs-update` (also runs automatically on `ddev start`).
